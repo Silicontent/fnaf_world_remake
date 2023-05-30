@@ -1,0 +1,274 @@
+[gd_resource type="SpriteFrames" load_steps=62 format=3 uid="uid://c8ekupr0xlits"]
+
+[ext_resource type="Texture2D" uid="uid://de4njfqfgqse8" path="res://assets/overworld/player/idle.png" id="1_vr4ay"]
+[ext_resource type="Texture2D" uid="uid://cnec1wv82nul4" path="res://assets/overworld/player/walk_down/walk_down_01.png" id="2_h62pl"]
+[ext_resource type="Texture2D" uid="uid://hovjfs8gvw8h" path="res://assets/overworld/player/walk_down/walk_down_02.png" id="3_6u3ul"]
+[ext_resource type="Texture2D" uid="uid://bmj6qn3jip6b7" path="res://assets/overworld/player/walk_down/walk_down_03.png" id="4_wj7gr"]
+[ext_resource type="Texture2D" uid="uid://c380ebqo3w4nq" path="res://assets/overworld/player/walk_down/walk_down_04.png" id="5_d5tj7"]
+[ext_resource type="Texture2D" uid="uid://d2csiqi184m2l" path="res://assets/overworld/player/walk_down/walk_down_05.png" id="6_2dn1b"]
+[ext_resource type="Texture2D" uid="uid://yk3p28s0nmh3" path="res://assets/overworld/player/walk_down/walk_down_06.png" id="7_7j1db"]
+[ext_resource type="Texture2D" uid="uid://bl0m5bm6c6jfo" path="res://assets/overworld/player/walk_down/walk_down_07.png" id="8_lpywd"]
+[ext_resource type="Texture2D" uid="uid://b2qvlvop00euf" path="res://assets/overworld/player/walk_down/walk_down_08.png" id="9_cxabm"]
+[ext_resource type="Texture2D" uid="uid://jn4cywdsgvyy" path="res://assets/overworld/player/walk_down/walk_down_09.png" id="10_c7uma"]
+[ext_resource type="Texture2D" uid="uid://7wh276fqobdm" path="res://assets/overworld/player/walk_down/walk_down_10.png" id="11_afuqo"]
+[ext_resource type="Texture2D" uid="uid://hr2pjsntw77k" path="res://assets/overworld/player/walk_down/walk_down_11.png" id="12_boqul"]
+[ext_resource type="Texture2D" uid="uid://hgbq2kexqyvr" path="res://assets/overworld/player/walk_down/walk_down_12.png" id="13_e030w"]
+[ext_resource type="Texture2D" uid="uid://dssl1qty648j8" path="res://assets/overworld/player/walk_down/walk_down_13.png" id="14_c6w3b"]
+[ext_resource type="Texture2D" uid="uid://bwy8mkl3a50ay" path="res://assets/overworld/player/walk_down/walk_down_14.png" id="15_pfl0x"]
+[ext_resource type="Texture2D" uid="uid://cpnjpoc7h4kqf" path="res://assets/overworld/player/walk_down/walk_down_15.png" id="16_r68iy"]
+[ext_resource type="Texture2D" uid="uid://cajgbndhm8vyf" path="res://assets/overworld/player/walk_left/walk_left_01.png" id="17_xbl3h"]
+[ext_resource type="Texture2D" uid="uid://b00mh0u7inarv" path="res://assets/overworld/player/walk_left/walk_left_02.png" id="18_gcl65"]
+[ext_resource type="Texture2D" uid="uid://b5r8q34l8kggo" path="res://assets/overworld/player/walk_left/walk_left_03.png" id="19_jyi3o"]
+[ext_resource type="Texture2D" uid="uid://ranpx8e3ahb1" path="res://assets/overworld/player/walk_left/walk_left_04.png" id="20_gu3ei"]
+[ext_resource type="Texture2D" uid="uid://d0jfpkgp52ekr" path="res://assets/overworld/player/walk_left/walk_left_05.png" id="21_kuido"]
+[ext_resource type="Texture2D" uid="uid://cfspyax4wtfl4" path="res://assets/overworld/player/walk_left/walk_left_06.png" id="22_xg5v7"]
+[ext_resource type="Texture2D" uid="uid://c1xq1lnpy38hu" path="res://assets/overworld/player/walk_left/walk_left_07.png" id="23_yuhcc"]
+[ext_resource type="Texture2D" uid="uid://c03lpml8sumo2" path="res://assets/overworld/player/walk_left/walk_left_08.png" id="24_ccx3n"]
+[ext_resource type="Texture2D" uid="uid://bk2laiybw6obx" path="res://assets/overworld/player/walk_left/walk_left_09.png" id="25_vbawg"]
+[ext_resource type="Texture2D" uid="uid://odhqx4newgi5" path="res://assets/overworld/player/walk_left/walk_left_10.png" id="26_8vktt"]
+[ext_resource type="Texture2D" uid="uid://bppglo6vlmhoc" path="res://assets/overworld/player/walk_left/walk_left_11.png" id="27_3xy6n"]
+[ext_resource type="Texture2D" uid="uid://dk34ddjksbbie" path="res://assets/overworld/player/walk_left/walk_left_12.png" id="28_xk7ju"]
+[ext_resource type="Texture2D" uid="uid://bbyfg3fy6xm63" path="res://assets/overworld/player/walk_left/walk_left_13.png" id="29_yhcnn"]
+[ext_resource type="Texture2D" uid="uid://decqmy7gimg8q" path="res://assets/overworld/player/walk_left/walk_left_14.png" id="30_gf7vk"]
+[ext_resource type="Texture2D" uid="uid://dmct7k50uf1uh" path="res://assets/overworld/player/walk_left/walk_left_15.png" id="31_p2ayo"]
+[ext_resource type="Texture2D" uid="uid://dom4om4i0q36y" path="res://assets/overworld/player/walk_right/walk_right_01.png" id="32_tfsnm"]
+[ext_resource type="Texture2D" uid="uid://3bxn8qu0rb48" path="res://assets/overworld/player/walk_right/walk_right_02.png" id="33_wgjej"]
+[ext_resource type="Texture2D" uid="uid://c6nvx53g8sxh0" path="res://assets/overworld/player/walk_right/walk_right_03.png" id="34_3lbhn"]
+[ext_resource type="Texture2D" uid="uid://cby4caue3pffv" path="res://assets/overworld/player/walk_right/walk_right_04.png" id="35_a5mis"]
+[ext_resource type="Texture2D" uid="uid://bc1xh58llndwf" path="res://assets/overworld/player/walk_right/walk_right_05.png" id="36_dsaxm"]
+[ext_resource type="Texture2D" uid="uid://cw2f7y4r1x5xl" path="res://assets/overworld/player/walk_right/walk_right_06.png" id="37_fpaic"]
+[ext_resource type="Texture2D" uid="uid://8nurpjhtvjjr" path="res://assets/overworld/player/walk_right/walk_right_07.png" id="38_fpxi3"]
+[ext_resource type="Texture2D" uid="uid://csall0r8o3ioy" path="res://assets/overworld/player/walk_right/walk_right_08.png" id="39_nhmvk"]
+[ext_resource type="Texture2D" uid="uid://bs6cg7p6uxdek" path="res://assets/overworld/player/walk_right/walk_right_09.png" id="40_g1r30"]
+[ext_resource type="Texture2D" uid="uid://caxhxtnyfmoud" path="res://assets/overworld/player/walk_right/walk_right_10.png" id="41_snqjg"]
+[ext_resource type="Texture2D" uid="uid://5n4d0voesrbb" path="res://assets/overworld/player/walk_right/walk_right_11.png" id="42_imw1v"]
+[ext_resource type="Texture2D" uid="uid://bggb6tcmxmeoc" path="res://assets/overworld/player/walk_right/walk_right_12.png" id="43_c3ba8"]
+[ext_resource type="Texture2D" uid="uid://btsi1bd6nx3qv" path="res://assets/overworld/player/walk_right/walk_right_13.png" id="44_pma4c"]
+[ext_resource type="Texture2D" uid="uid://qmhgakpl3rtb" path="res://assets/overworld/player/walk_right/walk_right_14.png" id="45_f0i0j"]
+[ext_resource type="Texture2D" uid="uid://btejufi0qjv5e" path="res://assets/overworld/player/walk_right/walk_right_15.png" id="46_5utmr"]
+[ext_resource type="Texture2D" uid="uid://m8bg0ps7k8ud" path="res://assets/overworld/player/walk_up/walk_up_01.png" id="47_3kmv4"]
+[ext_resource type="Texture2D" uid="uid://bo7lvykx3ckx5" path="res://assets/overworld/player/walk_up/walk_up_02.png" id="48_5003n"]
+[ext_resource type="Texture2D" uid="uid://d07jg0mjcdmib" path="res://assets/overworld/player/walk_up/walk_up_03.png" id="49_w0p17"]
+[ext_resource type="Texture2D" uid="uid://bnl7o5p4neoy3" path="res://assets/overworld/player/walk_up/walk_up_04.png" id="50_rlelh"]
+[ext_resource type="Texture2D" uid="uid://ds777mxlfl6pb" path="res://assets/overworld/player/walk_up/walk_up_05.png" id="51_1wort"]
+[ext_resource type="Texture2D" uid="uid://q1gwgws7hj5d" path="res://assets/overworld/player/walk_up/walk_up_06.png" id="52_ftcb7"]
+[ext_resource type="Texture2D" uid="uid://qolu5w60o3xn" path="res://assets/overworld/player/walk_up/walk_up_07.png" id="53_o8xvj"]
+[ext_resource type="Texture2D" uid="uid://0kif6n1ldiv5" path="res://assets/overworld/player/walk_up/walk_up_08.png" id="54_kowgo"]
+[ext_resource type="Texture2D" uid="uid://b5ac4a78nitro" path="res://assets/overworld/player/walk_up/walk_up_09.png" id="55_d6fdt"]
+[ext_resource type="Texture2D" uid="uid://y0d8w12ucddb" path="res://assets/overworld/player/walk_up/walk_up_10.png" id="56_seofc"]
+[ext_resource type="Texture2D" uid="uid://kv8y460fi7rm" path="res://assets/overworld/player/walk_up/walk_up_11.png" id="57_qvgbl"]
+[ext_resource type="Texture2D" uid="uid://txd6qu5rbsrh" path="res://assets/overworld/player/walk_up/walk_up_12.png" id="58_6sykg"]
+[ext_resource type="Texture2D" uid="uid://bb8n4helc6f46" path="res://assets/overworld/player/walk_up/walk_up_13.png" id="59_xonak"]
+[ext_resource type="Texture2D" uid="uid://b1s2k53fwqw2y" path="res://assets/overworld/player/walk_up/walk_up_14.png" id="60_0m5pk"]
+[ext_resource type="Texture2D" uid="uid://busd8g321bhwk" path="res://assets/overworld/player/walk_up/walk_up_15.png" id="61_0aenx"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vr4ay")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_h62pl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6u3ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wj7gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d5tj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2dn1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7j1db")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_lpywd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cxabm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_c7uma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_afuqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_boqul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_e030w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_c6w3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pfl0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_r68iy")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_xbl3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_gcl65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jyi3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_gu3ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_kuido")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xg5v7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_yuhcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ccx3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_vbawg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_8vktt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_3xy6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xk7ju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_yhcnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_gf7vk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_p2ayo")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_tfsnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_wgjej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_3lbhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_a5mis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_dsaxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_fpaic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_fpxi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_nhmvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_g1r30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_snqjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_imw1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_c3ba8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_pma4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_f0i0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_5utmr")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_3kmv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_5003n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_w0p17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_rlelh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_1wort")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ftcb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_o8xvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_kowgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_d6fdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_seofc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_qvgbl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_6sykg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_xonak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_0m5pk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_0aenx")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 30.0
+}]

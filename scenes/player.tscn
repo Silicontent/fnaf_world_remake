@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b654mx2e8o0l8"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_rhvbp"]
+[ext_resource type="SpriteFrames" uid="uid://c8ekupr0xlits" path="res://assets/overworld/player/player_spr_frames.tres" id="1_thxj0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arqmg"]
+size = Vector2(32, 29)
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 58
+motion_mode = 1
+script = ExtResource("1_rhvbp")
+speed = 150
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_thxj0")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11.5)
+shape = SubResource("RectangleShape2D_arqmg")
