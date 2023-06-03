@@ -3,3 +3,4 @@ res://assets/overworld/tilesets/ground_tiles.tres
 res://assets/overworld/tilesets/transition_tiles.tres
 res://assets/overworld/tilesets/obstacle_tiles.tres
 res://scenes/player.tscn
+res://assets/overworld/tilesets/overhead_tiles.tres

@@ -1,6 +1,7 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bqmf12l1nyvk7"]
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://bqmf12l1nyvk7"]
 
 [ext_resource type="Texture2D" uid="uid://rcf4cv8jyiqj" path="res://assets/overworld/environment/ground_atlas.png" id="1_34ck4"]
+[ext_resource type="Texture2D" uid="uid://h5x0wcj1tnac" path="res://assets/overworld/environment/transitions_atlas.png" id="2_oco4x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_56kj6"]
 texture = ExtResource("1_34ck4")
@@ -14,6 +15,23 @@ texture_region_size = Vector2i(100, 100)
 2:1/0 = 0
 3:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_61cgh"]
+texture = ExtResource("2_oco4x")
+texture_region_size = Vector2i(100, 100)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+
 [resource]
 tile_size = Vector2i(100, 100)
 sources/0 = SubResource("TileSetAtlasSource_56kj6")
+sources/1 = SubResource("TileSetAtlasSource_61cgh")

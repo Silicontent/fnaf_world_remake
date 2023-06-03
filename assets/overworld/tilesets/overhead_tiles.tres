@@ -1,0 +1,24 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cupjgsg50j5lo"]
+
+[ext_resource type="Texture2D" uid="uid://orhbi2ehmup2" path="res://assets/overworld/environment/plains/windmill.png" id="2_6gbkl"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e1jx0"]
+texture = ExtResource("2_6gbkl")
+texture_region_size = Vector2i(50, 100)
+0:0/animation_columns = 1
+0:0/animation_speed = 2.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/animation_frame_8/duration = 1.0
+0:0/animation_frame_9/duration = 1.0
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(50, 50)
+sources/0 = SubResource("TileSetAtlasSource_e1jx0")
