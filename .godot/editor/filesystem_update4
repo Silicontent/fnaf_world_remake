@@ -1,5 +1,8 @@
-res://scenes/player.tscn
+res://scenes/overworld.tscn
 res://assets/overworld/tilesets/ground_tiles.tres
 res://assets/overworld/tilesets/obstacle_tiles.tres
 res://assets/overworld/tilesets/overhead_tiles.tres
 res://assets/overworld/tilesets/decor_atlas.tres
+res://scenes/player.tscn
+res://scenes/collectable.tscn
+res://scripts/collectable.gd

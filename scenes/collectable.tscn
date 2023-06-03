@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl5xxy7hcw5nv"]
+
+[ext_resource type="Script" path="res://scripts/collectable.gd" id="1_ftkf8"]
+
+[node name="Collectable" type="Area2D"]
+position = Vector2(0, 1)
+collision_layer = 8
+script = ExtResource("1_ftkf8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
