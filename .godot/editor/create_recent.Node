@@ -1,9 +1,9 @@
+Node2D
 TileMap
 Sprite2D
 CollisionShape2D
 StaticBody2D
 Camera2D
-Node2D
 AnimationPlayer
 Node3D
 Marker2D
