@@ -15,6 +15,7 @@ speed = 150
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_thxj0")
 animation = &"idle"
+frame_progress = 0.548162
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 11.5)

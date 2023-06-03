@@ -1,44 +1,84 @@
-[gd_resource type="SpriteFrames" load_steps=62 format=3 uid="uid://c8ekupr0xlits"]
+[gd_resource type="SpriteFrames" load_steps=102 format=3 uid="uid://c8ekupr0xlits"]
 
+[ext_resource type="Texture2D" uid="uid://cvujgiwm80duw" path="res://assets/overworld/player/boat_down/boat_down_01.png" id="1_06ie2"]
 [ext_resource type="Texture2D" uid="uid://de4njfqfgqse8" path="res://assets/overworld/player/idle.png" id="1_vr4ay"]
 [ext_resource type="Texture2D" uid="uid://cnec1wv82nul4" path="res://assets/overworld/player/walk_down/walk_down_01.png" id="2_h62pl"]
+[ext_resource type="Texture2D" uid="uid://c1wdxudgy3d07" path="res://assets/overworld/player/boat_down/boat_down_02.png" id="2_ruq5r"]
 [ext_resource type="Texture2D" uid="uid://hovjfs8gvw8h" path="res://assets/overworld/player/walk_down/walk_down_02.png" id="3_6u3ul"]
+[ext_resource type="Texture2D" uid="uid://c28mc81udu64w" path="res://assets/overworld/player/boat_down/boat_down_03.png" id="3_b77fe"]
+[ext_resource type="Texture2D" uid="uid://wp56swattb04" path="res://assets/overworld/player/boat_down/boat_down_04.png" id="4_8lk6a"]
 [ext_resource type="Texture2D" uid="uid://bmj6qn3jip6b7" path="res://assets/overworld/player/walk_down/walk_down_03.png" id="4_wj7gr"]
 [ext_resource type="Texture2D" uid="uid://c380ebqo3w4nq" path="res://assets/overworld/player/walk_down/walk_down_04.png" id="5_d5tj7"]
+[ext_resource type="Texture2D" uid="uid://c0nmo4k2qpjy6" path="res://assets/overworld/player/boat_down/boat_down_05.png" id="5_qirn0"]
 [ext_resource type="Texture2D" uid="uid://d2csiqi184m2l" path="res://assets/overworld/player/walk_down/walk_down_05.png" id="6_2dn1b"]
+[ext_resource type="Texture2D" uid="uid://trq8jev5bxim" path="res://assets/overworld/player/boat_down/boat_down_06.png" id="6_7lugd"]
 [ext_resource type="Texture2D" uid="uid://yk3p28s0nmh3" path="res://assets/overworld/player/walk_down/walk_down_06.png" id="7_7j1db"]
+[ext_resource type="Texture2D" uid="uid://du0iju501vdp7" path="res://assets/overworld/player/boat_down/boat_down_07.png" id="7_na2ox"]
+[ext_resource type="Texture2D" uid="uid://siy61c6od0qh" path="res://assets/overworld/player/boat_down/boat_down_08.png" id="8_8ftvr"]
 [ext_resource type="Texture2D" uid="uid://bl0m5bm6c6jfo" path="res://assets/overworld/player/walk_down/walk_down_07.png" id="8_lpywd"]
 [ext_resource type="Texture2D" uid="uid://b2qvlvop00euf" path="res://assets/overworld/player/walk_down/walk_down_08.png" id="9_cxabm"]
+[ext_resource type="Texture2D" uid="uid://puvipyea2tx8" path="res://assets/overworld/player/boat_down/boat_down_09.png" id="9_mon12"]
 [ext_resource type="Texture2D" uid="uid://jn4cywdsgvyy" path="res://assets/overworld/player/walk_down/walk_down_09.png" id="10_c7uma"]
+[ext_resource type="Texture2D" uid="uid://s00somj468ul" path="res://assets/overworld/player/boat_down/boat_down_10.png" id="10_pvx6b"]
+[ext_resource type="Texture2D" uid="uid://dbftmjdheymv6" path="res://assets/overworld/player/boat_left/boat_left_01.png" id="11_6anqm"]
 [ext_resource type="Texture2D" uid="uid://7wh276fqobdm" path="res://assets/overworld/player/walk_down/walk_down_10.png" id="11_afuqo"]
+[ext_resource type="Texture2D" uid="uid://ba8uthcr5qnpd" path="res://assets/overworld/player/boat_left/boat_left_02.png" id="12_7r2ym"]
 [ext_resource type="Texture2D" uid="uid://hr2pjsntw77k" path="res://assets/overworld/player/walk_down/walk_down_11.png" id="12_boqul"]
 [ext_resource type="Texture2D" uid="uid://hgbq2kexqyvr" path="res://assets/overworld/player/walk_down/walk_down_12.png" id="13_e030w"]
+[ext_resource type="Texture2D" uid="uid://c56w2h87a5pp0" path="res://assets/overworld/player/boat_left/boat_left_03.png" id="13_oy8sl"]
+[ext_resource type="Texture2D" uid="uid://bdjixyu76lj06" path="res://assets/overworld/player/boat_left/boat_left_04.png" id="14_afrhu"]
 [ext_resource type="Texture2D" uid="uid://dssl1qty648j8" path="res://assets/overworld/player/walk_down/walk_down_13.png" id="14_c6w3b"]
+[ext_resource type="Texture2D" uid="uid://0cpc0imn3oww" path="res://assets/overworld/player/boat_left/boat_left_05.png" id="15_15u10"]
 [ext_resource type="Texture2D" uid="uid://bwy8mkl3a50ay" path="res://assets/overworld/player/walk_down/walk_down_14.png" id="15_pfl0x"]
 [ext_resource type="Texture2D" uid="uid://cpnjpoc7h4kqf" path="res://assets/overworld/player/walk_down/walk_down_15.png" id="16_r68iy"]
+[ext_resource type="Texture2D" uid="uid://c4emx2e7l3q4j" path="res://assets/overworld/player/boat_left/boat_left_06.png" id="16_sg6jj"]
+[ext_resource type="Texture2D" uid="uid://dh647vv7wwxr7" path="res://assets/overworld/player/boat_left/boat_left_07.png" id="17_a3rx3"]
 [ext_resource type="Texture2D" uid="uid://cajgbndhm8vyf" path="res://assets/overworld/player/walk_left/walk_left_01.png" id="17_xbl3h"]
 [ext_resource type="Texture2D" uid="uid://b00mh0u7inarv" path="res://assets/overworld/player/walk_left/walk_left_02.png" id="18_gcl65"]
+[ext_resource type="Texture2D" uid="uid://bit86gtbrln5o" path="res://assets/overworld/player/boat_left/boat_left_08.png" id="18_ovk8q"]
+[ext_resource type="Texture2D" uid="uid://dwumj1hoiy325" path="res://assets/overworld/player/boat_left/boat_left_09.png" id="19_38ymk"]
 [ext_resource type="Texture2D" uid="uid://b5r8q34l8kggo" path="res://assets/overworld/player/walk_left/walk_left_03.png" id="19_jyi3o"]
+[ext_resource type="Texture2D" uid="uid://c5jdawteupm27" path="res://assets/overworld/player/boat_left/boat_left_10.png" id="20_6o8bw"]
 [ext_resource type="Texture2D" uid="uid://ranpx8e3ahb1" path="res://assets/overworld/player/walk_left/walk_left_04.png" id="20_gu3ei"]
+[ext_resource type="Texture2D" uid="uid://dlpnjdk7bh4o2" path="res://assets/overworld/player/boat_right/boat_right_01.png" id="21_fffd7"]
 [ext_resource type="Texture2D" uid="uid://d0jfpkgp52ekr" path="res://assets/overworld/player/walk_left/walk_left_05.png" id="21_kuido"]
+[ext_resource type="Texture2D" uid="uid://htld8xqbt5nd" path="res://assets/overworld/player/boat_right/boat_right_02.png" id="22_ob2l3"]
 [ext_resource type="Texture2D" uid="uid://cfspyax4wtfl4" path="res://assets/overworld/player/walk_left/walk_left_06.png" id="22_xg5v7"]
+[ext_resource type="Texture2D" uid="uid://cj5vimj4bhd4o" path="res://assets/overworld/player/boat_right/boat_right_03.png" id="23_wl7q1"]
 [ext_resource type="Texture2D" uid="uid://c1xq1lnpy38hu" path="res://assets/overworld/player/walk_left/walk_left_07.png" id="23_yuhcc"]
 [ext_resource type="Texture2D" uid="uid://c03lpml8sumo2" path="res://assets/overworld/player/walk_left/walk_left_08.png" id="24_ccx3n"]
+[ext_resource type="Texture2D" uid="uid://cnopr6be5wsbe" path="res://assets/overworld/player/boat_right/boat_right_04.png" id="24_wp1l6"]
+[ext_resource type="Texture2D" uid="uid://cp6aosqa0nxkt" path="res://assets/overworld/player/boat_right/boat_right_05.png" id="25_s3q68"]
 [ext_resource type="Texture2D" uid="uid://bk2laiybw6obx" path="res://assets/overworld/player/walk_left/walk_left_09.png" id="25_vbawg"]
 [ext_resource type="Texture2D" uid="uid://odhqx4newgi5" path="res://assets/overworld/player/walk_left/walk_left_10.png" id="26_8vktt"]
+[ext_resource type="Texture2D" uid="uid://8vgegwwbmfdb" path="res://assets/overworld/player/boat_right/boat_right_06.png" id="26_rslf2"]
+[ext_resource type="Texture2D" uid="uid://dfpo055vxle7l" path="res://assets/overworld/player/boat_right/boat_right_07.png" id="27_1xqu2"]
 [ext_resource type="Texture2D" uid="uid://bppglo6vlmhoc" path="res://assets/overworld/player/walk_left/walk_left_11.png" id="27_3xy6n"]
+[ext_resource type="Texture2D" uid="uid://027i7i163vbh" path="res://assets/overworld/player/boat_right/boat_right_08.png" id="28_ikjhm"]
 [ext_resource type="Texture2D" uid="uid://dk34ddjksbbie" path="res://assets/overworld/player/walk_left/walk_left_12.png" id="28_xk7ju"]
+[ext_resource type="Texture2D" uid="uid://c80ytbsrbnraj" path="res://assets/overworld/player/boat_right/boat_right_09.png" id="29_v46jx"]
 [ext_resource type="Texture2D" uid="uid://bbyfg3fy6xm63" path="res://assets/overworld/player/walk_left/walk_left_13.png" id="29_yhcnn"]
 [ext_resource type="Texture2D" uid="uid://decqmy7gimg8q" path="res://assets/overworld/player/walk_left/walk_left_14.png" id="30_gf7vk"]
+[ext_resource type="Texture2D" uid="uid://b73gpfr5la6pw" path="res://assets/overworld/player/boat_right/boat_right_10.png" id="30_ot535"]
+[ext_resource type="Texture2D" uid="uid://dmnfspthiipm2" path="res://assets/overworld/player/boat_up/boat_up_01.png" id="31_0d1sc"]
 [ext_resource type="Texture2D" uid="uid://dmct7k50uf1uh" path="res://assets/overworld/player/walk_left/walk_left_15.png" id="31_p2ayo"]
+[ext_resource type="Texture2D" uid="uid://gkk1ss7nk6dg" path="res://assets/overworld/player/boat_up/boat_up_02.png" id="32_p86lm"]
 [ext_resource type="Texture2D" uid="uid://dom4om4i0q36y" path="res://assets/overworld/player/walk_right/walk_right_01.png" id="32_tfsnm"]
 [ext_resource type="Texture2D" uid="uid://3bxn8qu0rb48" path="res://assets/overworld/player/walk_right/walk_right_02.png" id="33_wgjej"]
+[ext_resource type="Texture2D" uid="uid://bi30htr2mjsia" path="res://assets/overworld/player/boat_up/boat_up_03.png" id="33_y5iqa"]
 [ext_resource type="Texture2D" uid="uid://c6nvx53g8sxh0" path="res://assets/overworld/player/walk_right/walk_right_03.png" id="34_3lbhn"]
+[ext_resource type="Texture2D" uid="uid://bplf5xgndfleg" path="res://assets/overworld/player/boat_up/boat_up_04.png" id="34_8fbwq"]
 [ext_resource type="Texture2D" uid="uid://cby4caue3pffv" path="res://assets/overworld/player/walk_right/walk_right_04.png" id="35_a5mis"]
+[ext_resource type="Texture2D" uid="uid://c57gluqvrf0du" path="res://assets/overworld/player/boat_up/boat_up_05.png" id="35_ywxgx"]
 [ext_resource type="Texture2D" uid="uid://bc1xh58llndwf" path="res://assets/overworld/player/walk_right/walk_right_05.png" id="36_dsaxm"]
+[ext_resource type="Texture2D" uid="uid://dq073mp6u26br" path="res://assets/overworld/player/boat_up/boat_up_06.png" id="36_v72p4"]
+[ext_resource type="Texture2D" uid="uid://13bm8kkbagrk" path="res://assets/overworld/player/boat_up/boat_up_07.png" id="37_1asjf"]
 [ext_resource type="Texture2D" uid="uid://cw2f7y4r1x5xl" path="res://assets/overworld/player/walk_right/walk_right_06.png" id="37_fpaic"]
+[ext_resource type="Texture2D" uid="uid://dj2iaej1gv4xg" path="res://assets/overworld/player/boat_up/boat_up_08.png" id="38_4a2fj"]
 [ext_resource type="Texture2D" uid="uid://8nurpjhtvjjr" path="res://assets/overworld/player/walk_right/walk_right_07.png" id="38_fpxi3"]
+[ext_resource type="Texture2D" uid="uid://cysjnb0vhqdd" path="res://assets/overworld/player/boat_up/boat_up_09.png" id="39_lrhmn"]
 [ext_resource type="Texture2D" uid="uid://csall0r8o3ioy" path="res://assets/overworld/player/walk_right/walk_right_08.png" id="39_nhmvk"]
+[ext_resource type="Texture2D" uid="uid://c7rh7easudlk2" path="res://assets/overworld/player/boat_up/boat_up_10.png" id="40_6y77w"]
 [ext_resource type="Texture2D" uid="uid://bs6cg7p6uxdek" path="res://assets/overworld/player/walk_right/walk_right_09.png" id="40_g1r30"]
 [ext_resource type="Texture2D" uid="uid://caxhxtnyfmoud" path="res://assets/overworld/player/walk_right/walk_right_10.png" id="41_snqjg"]
 [ext_resource type="Texture2D" uid="uid://5n4d0voesrbb" path="res://assets/overworld/player/walk_right/walk_right_11.png" id="42_imw1v"]
@@ -64,6 +104,181 @@
 
 [resource]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_06ie2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ruq5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b77fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8lk6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qirn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7lugd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_na2ox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8ftvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mon12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pvx6b")
+}],
+"loop": true,
+"name": &"boat_down",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_06ie2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ruq5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b77fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8lk6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qirn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7lugd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_na2ox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8ftvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mon12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pvx6b")
+}],
+"loop": true,
+"name": &"boat_idle",
+"speed": 14.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_6anqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7r2ym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_oy8sl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_afrhu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_15u10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_sg6jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_a3rx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ovk8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_38ymk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6o8bw")
+}],
+"loop": true,
+"name": &"boat_left",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_fffd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ob2l3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_wl7q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_wp1l6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_s3q68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_rslf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_1xqu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ikjhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_v46jx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ot535")
+}],
+"loop": true,
+"name": &"boat_right",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_0d1sc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_p86lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_y5iqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_8fbwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ywxgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_v72p4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_1asjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_4a2fj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_lrhmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_6y77w")
+}],
+"loop": true,
+"name": &"boat_up",
+"speed": 20.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_vr4ay")

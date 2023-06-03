@@ -1,7 +1,8 @@
-[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://b4f0xuh3ivgp7"]
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://b4f0xuh3ivgp7"]
 
 [ext_resource type="Texture2D" uid="uid://v85igqtcf7wr" path="res://assets/overworld/environment/decor_atlas.png" id="1_m3oro"]
 [ext_resource type="Texture2D" uid="uid://b7bfmgfupffnb" path="res://assets/overworld/environment/cemetery/flame.png" id="2_srsx7"]
+[ext_resource type="Texture2D" uid="uid://c6xllc7m73ysi" path="res://assets/overworld/environment/snow/dancer.png" id="3_2ofrp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2q5cx"]
 texture = ExtResource("1_m3oro")
@@ -90,7 +91,46 @@ texture_region_size = Vector2i(50, 50)
 0:0/animation_frame_25/duration = 1.0
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_otpju"]
+texture = ExtResource("3_2ofrp")
+texture_region_size = Vector2i(50, 50)
+0:0/animation_columns = 1
+0:0/animation_speed = 15.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/animation_frame_8/duration = 1.0
+0:0/animation_frame_9/duration = 1.0
+0:0/animation_frame_10/duration = 1.0
+0:0/animation_frame_11/duration = 1.0
+0:0/animation_frame_12/duration = 1.0
+0:0/animation_frame_13/duration = 1.0
+0:0/animation_frame_14/duration = 1.0
+0:0/animation_frame_15/duration = 1.0
+0:0/animation_frame_16/duration = 1.0
+0:0/animation_frame_17/duration = 1.0
+0:0/animation_frame_18/duration = 1.0
+0:0/animation_frame_19/duration = 1.0
+0:0/animation_frame_20/duration = 1.0
+0:0/animation_frame_21/duration = 1.0
+0:0/animation_frame_22/duration = 1.0
+0:0/animation_frame_23/duration = 1.0
+0:0/animation_frame_24/duration = 1.0
+0:0/animation_frame_25/duration = 1.0
+0:0/animation_frame_26/duration = 1.0
+0:0/animation_frame_27/duration = 1.0
+0:0/animation_frame_28/duration = 1.0
+0:0/animation_frame_29/duration = 1.0
+0:0/animation_frame_30/duration = 1.0
+0:0/0 = 0
+
 [resource]
 tile_size = Vector2i(50, 50)
 sources/0 = SubResource("TileSetAtlasSource_2q5cx")
 sources/1 = SubResource("TileSetAtlasSource_w2t4j")
+sources/2 = SubResource("TileSetAtlasSource_otpju")
