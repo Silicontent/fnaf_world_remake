@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c78qid1bs3lxk"
-path="res://.godot/imported/lights_atlas.png-d5994f0fce27c18372c9cc0cf8cb33a7.ctex"
+uid="uid://v0xrfnqt8sjd"
+path="res://.godot/imported/mine_camera_mask.png-57b3f2500503349472aafcdddfb60bfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/overworld/environment/lights_atlas.png"
-dest_files=["res://.godot/imported/lights_atlas.png-d5994f0fce27c18372c9cc0cf8cb33a7.ctex"]
+source_file="res://assets/overworld/player/mine_camera_mask.png"
+dest_files=["res://.godot/imported/mine_camera_mask.png-57b3f2500503349472aafcdddfb60bfc.ctex"]
 
 [params]
 

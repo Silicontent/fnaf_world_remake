@@ -1,7 +1,13 @@
 extends CharacterBody2D
 
 @onready var sprite = $AnimatedSprite2D
+#@onready var dark_overlay = $Camera2D/DarkOverlay
 @export var speed = 400
+
+
+func _ready() -> void:
+	pass
+#	dark_overlay.visible = false
 
 
 func _physics_process(_delta: float) -> void:
