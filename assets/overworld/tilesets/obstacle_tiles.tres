@@ -1,7 +1,8 @@
-[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://d0gqgiu63am75"]
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://d0gqgiu63am75"]
 
 [ext_resource type="Texture2D" uid="uid://cvtcvpiyqc060" path="res://assets/overworld/environment/obstacles_atlas.png" id="1_4da6j"]
 [ext_resource type="Texture2D" uid="uid://dhco05pknqv2h" path="res://assets/overworld/environment/overhead_atlas.png" id="2_yavkc"]
+[ext_resource type="Texture2D" uid="uid://c78qid1bs3lxk" path="res://assets/overworld/environment/lights_atlas.png" id="3_vumod"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gxmse"]
 texture = ExtResource("1_4da6j")
@@ -139,6 +140,10 @@ texture_region_size = Vector2i(50, 50)
 7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:1/0/physics_layer_0/angular_velocity = 0.0
 7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25, -25, 25, -25, 25, 25, -25, 25)
+7:2/0 = 0
+7:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:2/0/physics_layer_0/angular_velocity = 0.0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25, -25, 25, -25, 25, 25, -25, 25)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ajsdb"]
 texture = ExtResource("2_yavkc")
@@ -210,8 +215,60 @@ texture_region_size = Vector2i(50, 50)
 1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:3/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wj5xa"]
+texture = ExtResource("3_vumod")
+texture_region_size = Vector2i(50, 50)
+0:0/animation_columns = 1
+0:0/animation_speed = 15.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/animation_frame_8/duration = 1.0
+0:0/animation_frame_9/duration = 1.0
+0:0/animation_frame_10/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/animation_columns = 1
+1:0/animation_speed = 25.0
+1:0/animation_frame_0/duration = 1.0
+1:0/animation_frame_1/duration = 1.0
+1:0/animation_frame_2/duration = 1.0
+1:0/animation_frame_3/duration = 1.0
+1:0/animation_frame_4/duration = 1.0
+1:0/animation_frame_5/duration = 1.0
+1:0/animation_frame_6/duration = 1.0
+1:0/animation_frame_7/duration = 1.0
+1:0/animation_frame_8/duration = 1.0
+1:0/animation_frame_9/duration = 1.0
+1:0/animation_frame_10/duration = 1.0
+1:0/animation_frame_11/duration = 1.0
+1:0/animation_frame_12/duration = 1.0
+1:0/animation_frame_13/duration = 1.0
+1:0/animation_frame_14/duration = 1.0
+1:0/animation_frame_15/duration = 1.0
+1:0/animation_frame_16/duration = 1.0
+1:0/animation_frame_17/duration = 1.0
+1:0/animation_frame_18/duration = 1.0
+1:0/animation_frame_19/duration = 1.0
+1:0/animation_frame_20/duration = 1.0
+1:0/animation_frame_21/duration = 1.0
+1:0/animation_frame_22/duration = 1.0
+1:0/animation_frame_23/duration = 1.0
+1:0/animation_frame_24/duration = 1.0
+1:0/animation_frame_25/duration = 1.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+
 [resource]
 tile_size = Vector2i(50, 50)
 physics_layer_0/collision_layer = 2
 sources/0 = SubResource("TileSetAtlasSource_gxmse")
 sources/1 = SubResource("TileSetAtlasSource_ajsdb")
+sources/2 = SubResource("TileSetAtlasSource_wj5xa")

@@ -1,6 +1,7 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cupjgsg50j5lo"]
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://cupjgsg50j5lo"]
 
 [ext_resource type="Texture2D" uid="uid://orhbi2ehmup2" path="res://assets/overworld/environment/plains/windmill.png" id="2_6gbkl"]
+[ext_resource type="Texture2D" uid="uid://b4raxhqk66wuo" path="res://assets/overworld/environment/plains/large_windmill.png" id="2_yoopl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e1jx0"]
 texture = ExtResource("2_6gbkl")
@@ -19,6 +20,34 @@ texture_region_size = Vector2i(50, 100)
 0:0/animation_frame_9/duration = 1.0
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kg406"]
+texture = ExtResource("2_yoopl")
+texture_region_size = Vector2i(200, 200)
+0:0/next_alternative_id = 2
+0:0/animation_columns = 1
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/animation_frame_8/duration = 1.0
+0:0/animation_frame_9/duration = 1.0
+0:0/animation_frame_10/duration = 1.0
+0:0/animation_frame_11/duration = 1.0
+0:0/animation_frame_12/duration = 1.0
+0:0/animation_frame_13/duration = 1.0
+0:0/animation_frame_14/duration = 1.0
+0:0/animation_frame_15/duration = 1.0
+0:0/animation_frame_16/duration = 1.0
+0:0/animation_frame_17/duration = 1.0
+0:0/animation_frame_18/duration = 1.0
+0:0/animation_frame_19/duration = 1.0
+0:0/0 = 0
+
 [resource]
 tile_size = Vector2i(50, 50)
 sources/0 = SubResource("TileSetAtlasSource_e1jx0")
+sources/1 = SubResource("TileSetAtlasSource_kg406")
