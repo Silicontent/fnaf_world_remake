@@ -59,6 +59,7 @@ player_right={
 2d_physics/layer_5="bosses"
 2d_physics/layer_6="portals"
 2d_physics/layer_7="glitch_layer"
+2d_physics/layer_8="area"
 
 [rendering]
 

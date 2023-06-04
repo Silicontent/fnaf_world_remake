@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd8mm1v1ffv2i"]
+
+[ext_resource type="Script" path="res://scripts/overworld_hud.gd" id="1_huyes"]
+[ext_resource type="Texture2D" uid="uid://5goh64ju5p8l" path="res://assets/ui/headers/fazbear_hills.png" id="2_85u6s"]
+
+[node name="OverworldHUD" type="CanvasLayer"]
+script = ExtResource("1_huyes")
+
+[node name="AreaHeader" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 247.0
+offset_bottom = 28.0
+texture = ExtResource("2_85u6s")

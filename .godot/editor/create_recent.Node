@@ -1,7 +1,11 @@
+TextureRect
+Label
+CanvasLayer
+CollisionPolygon2D
 CollisionShape2D
 Area2D
-Sprite2D
 Node2D
+Sprite2D
 TileMap
 StaticBody2D
 Camera2D

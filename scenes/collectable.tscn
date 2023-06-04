@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cl5xxy7hcw5nv"]
+[gd_scene load_steps=3 format=3 uid="uid://cl5xxy7hcw5nv"]
 
 [ext_resource type="Script" path="res://scripts/collectable.gd" id="1_ftkf8"]
+[ext_resource type="Texture2D" uid="uid://edxnygvjyo1y" path="res://assets/overworld/interactables/chests/small_silver_chest.png" id="2_th4q7"]
 
 [node name="Collectable" type="Area2D"]
-position = Vector2(0, 1)
 collision_layer = 8
 script = ExtResource("1_ftkf8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_th4q7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

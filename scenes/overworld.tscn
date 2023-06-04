@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://cnd0gopu3t8pf"]
+[gd_scene load_steps=19 format=3 uid="uid://cnd0gopu3t8pf"]
 
 [ext_resource type="TileSet" uid="uid://bqmf12l1nyvk7" path="res://assets/overworld/tilesets/ground_tiles.tres" id="1_3w0c6"]
+[ext_resource type="Script" path="res://scripts/overworld.gd" id="1_pmi5o"]
 [ext_resource type="TileSet" uid="uid://d0gqgiu63am75" path="res://assets/overworld/tilesets/obstacle_tiles.tres" id="3_6jo2l"]
 [ext_resource type="PackedScene" uid="uid://b654mx2e8o0l8" path="res://scenes/player.tscn" id="4_0iiyw"]
 [ext_resource type="Texture2D" uid="uid://cumxf1qff8nlk" path="res://assets/overworld/environment/plains/clock_house.png" id="4_fhde6"]
@@ -10,8 +11,24 @@
 [ext_resource type="Texture2D" uid="uid://dunjwadl76fu4" path="res://assets/overworld/environment/plains/henry_house.png" id="7_1daq3"]
 [ext_resource type="Texture2D" uid="uid://chrr72gehiang" path="res://assets/overworld/environment/plains/orange_house.png" id="8_hs7fa"]
 [ext_resource type="TileSet" uid="uid://b4f0xuh3ivgp7" path="res://assets/overworld/tilesets/decor_atlas.tres" id="9_u8pwc"]
+[ext_resource type="PackedScene" uid="uid://cl5xxy7hcw5nv" path="res://scenes/collectable.tscn" id="10_8kcdd"]
+[ext_resource type="Script" path="res://scripts/locations.gd" id="10_daw0b"]
+[ext_resource type="PackedScene" uid="uid://bd8mm1v1ffv2i" path="res://scenes/overworld_hud.tscn" id="14_c7ec2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5cie"]
+size = Vector2(842, 1168)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_otcse"]
+size = Vector2(1067, 1596)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_424t5"]
+size = Vector2(946, 234)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwa41"]
+size = Vector2(32, 22)
 
 [node name="Overworld" type="Node2D"]
+script = ExtResource("1_pmi5o")
 
 [node name="Environment" type="Node2D" parent="."]
 
@@ -94,13 +111,247 @@ format = 2
 layer_0/z_index = 1
 layer_0/tile_data = PackedInt32Array(1114151, 458752, 0, 1114147, 524288, 0, 262153, 589824, 0, 524301, 589824, 0, 851977, 589824, 0, 1114120, 589824, 0, 720901, 458752, 1, 786437, 458752, 2, 851973, 458752, 3, 720902, 524288, 1, 786438, 524288, 2, 851974, 524288, 3, 1245197, 458752, 1, 1310733, 458752, 2, 1376269, 458752, 3, 1245198, 524288, 1, 1310734, 524288, 2, 1376270, 524288, 3, 393224, 458752, 1, 458760, 458752, 2, 524296, 458752, 3, 393225, 524288, 1, 458761, 524288, 2, 524297, 524288, 3, 11, 0, 2, 65547, 0, 3, 131083, 0, 4, -131060, 65536, 0, -65524, 65536, 1, 12, 65536, 2, 65548, 65536, 3, 131084, 65536, 4, 196620, 65536, 5, 262156, 65536, 6, -131059, 131072, 0, -65523, 131072, 1, 13, 131072, 2, 65549, 131072, 3, 131085, 131072, 4, 196621, 131072, 5, 262157, 131072, 6, -131058, 196608, 0, -65522, 196608, 1, 14, 196608, 2, 65550, 196608, 3, 131086, 196608, 4, 196622, 196608, 5, -131057, 262144, 0, -65521, 262144, 1, 15, 262144, 2, 65551, 262144, 3, 131087, 262144, 4, 196623, 262144, 5, 262159, 262144, 6, -131056, 327680, 0, -65520, 327680, 1, 16, 327680, 2, 65552, 327680, 3, 131088, 327680, 4, 196624, 327680, 5, 262160, 327680, 6, -65519, 393216, 1, 17, 393216, 2, 65553, 393216, 3, 131089, 393216, 4, 1179672, 458752, 0, 655387, 458752, 0, 655404, 458752, 0, 262195, 458752, 0, 52, 524288, 0, 2818111, 1, 0, 3014718, 1, 0, 2949178, 1, 0, 2818120, 1, 0, 3014724, 1, 0, 3276866, 1, 0, 3342398, 1, 0, 2031678, 1, 0, 1900610, 1, 0, 1900612, 1, 0, 1638464, 1, 0, 1638467, 1, 0, 1507398, 1, 0, 1310784, 1, 0, 1310782, 1, 0, 1572925, 1, 0, 2424858, 1, 0, 2949138, 1, 0, 3014676, 1, 0, 3145746, 1, 0, 3276828, 1, 0, 262149, 2, 0)
 
-[node name="ChestManager" type="Node2D" parent="."]
+[node name="Locations" type="Node2D" parent="Environment"]
+script = ExtResource("10_daw0b")
 
-[node name="PossibleLocations" type="Node2D" parent="ChestManager"]
+[node name="FazbearHills" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Environment/Locations/FazbearHills"]
+polygon = PackedVector2Array(864, -896, 864, 256, 1408, 256, 1408, 384, 1888, 384, 1888, 656, 2283, 638, 2304, -288, 2176, -288, 2163, -344, 2128, -352, 2128, -392, 2088, -392, 2088, -472, 1832, -472, 1832, -536, 1696, -536, 1696, -896)
+
+[node name="ChoppyWoods" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/Locations/ChoppyWoods"]
+polygon = PackedVector2Array(864, 264, 864, 992, 1536, 992, 1536, 1088, 2176, 1088, 2176, 712, 2632, 712, 2632, 840, 2704, 840, 2704, 1000, 2728, 1000, 2736, -896, 1704, -896, 1704, -544, 1840, -544, 1840, -480, 2096, -480, 2096, -400, 2136, -400, 2136, -360, 2184, -360, 2184, -296, 2312, -296, 2312, 664, 1880, 664, 1880, 392, 1400, 392, 1400, 264)
+
+[node name="DustingFields" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="Environment/Locations/DustingFields"]
+position = Vector2(421, 584)
+shape = SubResource("RectangleShape2D_g5cie")
+
+[node name="LilygearLake" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="Environment/Locations/LilygearLake"]
+position = Vector2(3272.5, 93)
+shape = SubResource("RectangleShape2D_otcse")
+
+[node name="BlacktombYard" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/Locations/BlacktombYard"]
+polygon = PackedVector2Array(2800, 936, 2800, 1496, 2624, 1496, 2624, 1600, 2800, 1600, 2800, 1984, 3240, 1984, 3240, 1872, 3904, 1872, 3904, 936)
+
+[node name="PinwheelCircus" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/Locations/PinwheelCircus"]
+polygon = PackedVector2Array(2144, 1008, 2792, 1008, 2792, 1488, 2616, 1488, 2616, 1608, 2696, 1608, 2696, 3120, 2152, 3120)
+
+[node name="MysteriousMine" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/Locations/MysteriousMine"]
+polygon = PackedVector2Array(160, 1472, 1024, 1472, 1024, 1408, 1224, 1408, 1224, 1568, 1392, 1568, 1392, 1512, 1536, 1512, 1536, 1488, 1944, 1488, 1944, 1536, 1960, 1536, 1960, 1728, 2072, 1728, 2072, 2888, 1464, 2888, 1464, 3032, 32, 3032, 32, 2560, -144, 2560, -144, 2392, 40, 2392)
+
+[node name="DeepMetalMine" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/Locations/DeepMetalMine"]
+polygon = PackedVector2Array(2752, 2008, 3280, 2008, 3280, 1960, 3440, 1960, 3440, 1912, 3680, 1912, 3680, 2688, 2752, 2688)
+
+[node name="PinwheelFunhouse" type="Area2D" parent="Environment/Locations"]
+collision_layer = 128
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/Locations/PinwheelFunhouse"]
+polygon = PackedVector2Array(648, 1448, 1016, 1448, 1016, 1400, 1232, 1400, 1232, 1560, 1384, 1560, 1384, 1504, 1528, 1504, 1528, 1480, 1944, 1480, 1944, 1096, 1528, 1096, 1528, 1000, 1192, 1000, 1192, 1160, 864, 1160, 864, 1384, 648, 1384)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Locations/PinwheelFunhouse"]
+position = Vector2(3263, 2811)
+shape = SubResource("RectangleShape2D_424t5")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Environment/Locations/PinwheelFunhouse"]
+polygon = PackedVector2Array(2184, 720, 2624, 720, 2624, 848, 2696, 848, 2696, 1000, 2184, 1000)
+
+[node name="ChipChests" type="Node2D" parent="."]
+
+[node name="CoinChests" type="Node2D" parent="."]
+
+[node name="Place1" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(522, 123)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place1"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place2" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(524, 677)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place2"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place3" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(376, 677)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place3"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place4" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(324, 777)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place4"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place5" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1354, 1103)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place5"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place6" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(2327, 626)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place6"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place7" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1825, 321)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place7"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place8" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1526, 223)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place8"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place9" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1823, -123)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place9"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place10" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1926, -424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place10"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place11" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(2123, -428)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place11"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place12" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(2275, -677)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place12"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place13" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(2926, -228)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place13"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place14" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(3524, -75)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place14"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place15" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(2874, 228)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place15"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place16" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(3124, 1232)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place16"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place17" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(3076, 1274)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place17"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place18" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(3173, 1273)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place18"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place19" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(3674, 1475)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place19"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place20" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(2423, 1573)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place20"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place21" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(3626, 2276)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place21"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place22" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1874, 2073)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place22"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place23" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1425, 1977)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place23"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place24" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(626, 2721)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place24"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place25" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(326, 2326)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place25"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place26" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(324, 2167)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place26"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place27" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1874, 1873)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place27"]
+shape = SubResource("RectangleShape2D_vwa41")
+
+[node name="Place28" parent="CoinChests" instance=ExtResource("10_8kcdd")]
+position = Vector2(1426, 1477)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinChests/Place28"]
+shape = SubResource("RectangleShape2D_vwa41")
 
 [node name="Player" parent="." instance=ExtResource("4_0iiyw")]
-position = Vector2(1703, 154)
-speed = 300
+position = Vector2(1683, 135)
+speed = 400
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(1.3, 1.3)
@@ -108,3 +359,15 @@ limit_left = -400
 limit_top = -900
 limit_right = 4000
 limit_bottom = 3200
+
+[node name="OverworldHUD" parent="." instance=ExtResource("14_c7ec2")]
+
+[connection signal="body_entered" from="Environment/Locations/FazbearHills" to="Environment/Locations" method="_on_fazbear_hills_body_entered"]
+[connection signal="body_entered" from="Environment/Locations/ChoppyWoods" to="Environment/Locations" method="_on_choppy_woods_body_entered"]
+[connection signal="body_entered" from="Environment/Locations/DustingFields" to="Environment/Locations" method="_on_dusting_fields_body_entered"]
+[connection signal="body_entered" from="Environment/Locations/LilygearLake" to="Environment/Locations" method="_on_lilygear_lake_body_entered"]
+[connection signal="body_entered" from="Environment/Locations/BlacktombYard" to="Environment/Locations" method="_on_blacktomb_yard_body_entered"]
+[connection signal="body_entered" from="Environment/Locations/PinwheelCircus" to="Environment/Locations" method="_on_pinwheel_circus_body_entered"]
+[connection signal="body_entered" from="Environment/Locations/MysteriousMine" to="Environment/Locations" method="_on_mysterious_mine_body_entered"]
+[connection signal="body_entered" from="Environment/Locations/DeepMetalMine" to="Environment/Locations" method="_on_deep_metal_mine_body_entered"]
+[connection signal="body_entered" from="Environment/Locations/PinwheelFunhouse" to="Environment/Locations" method="_on_pinwheel_funhouse_body_entered"]
